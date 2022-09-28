@@ -1,3 +1,11 @@
+This repo contain a compiled version of:
+AstroVim - NVim
+Verible - The last working version for CentOS 6
+RipGrep - To use with AstroVim Telescope
+Git 2.9.5 - Newer than the 1.7 version on CentOS 6, also to use with GitSigns in AstroVim
+
+Usage:
+
 1. Check what shell you are using and use the corresponding install script
 2. Set executable permission for the scrips with the below command
 chmod +x bash_install.sh
