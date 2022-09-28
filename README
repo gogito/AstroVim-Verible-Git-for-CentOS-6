@@ -1,0 +1,9 @@
+1. Check what shell you are using and use the corresponding install script
+2. Set executable permission for the scrips with the below command
+chmod +x bash_install.sh
+OR
+chmod +x csh_install.csh
+3. Run the script
+source bash_install.sh
+OR
+source csh_install.csh
