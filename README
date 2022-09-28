@@ -4,6 +4,12 @@ Verible - The last working version for CentOS 6
 RipGrep - To use with AstroVim Telescope
 Git 2.9.5 - Newer than the 1.7 version on CentOS 6, also to use with GitSigns in AstroVim
 
+Changes:
+- Add Verible format command to Keymap
+<SPC> v f
+- Add fullpath file name to bufferline via Feline
+- Turn off relative number by default
+
 Usage:
 
 1. Check what shell you are using and use the corresponding install script
