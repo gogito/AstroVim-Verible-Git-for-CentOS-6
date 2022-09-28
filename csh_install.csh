@@ -8,8 +8,9 @@ chmod +x $HOME/bin/*
 chmod +x $HOME/neovim/bin/*
 echo "Done setting permission"
 echo ""
-echo "3. Add PATH to .bashrc"
+echo "3. Add PATH to .cshrc"
 touch ~/.cshrc
+chmod +w ~/.cshrc
 echo 'set path = ( $HOME/neovim/bin $HOME/bin $path )' >> ~/.cshrc
 echo ""
 echo "4. Install the font in .font to your terminal"
