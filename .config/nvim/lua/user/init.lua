@@ -5,7 +5,11 @@
 -- normal format is "key = value". These also handle array like data structures
 -- where a value with no key simply has an implicit numeric key
 local config = {
-
+  options = {
+    opt = {
+      relativenumber = false, -- sets vim.opt.relativenumber
+    },
+  },
   mappings = {
     -- first key is the mode
     n = {
