@@ -15,7 +15,7 @@ feline.setup(astronvim.user_plugin_opts("plugins.feline", {
         { provider = provider.spacer(2) },
         { provider = "git_branch", hl = hl.fg("Conditional", { fg = C.purple_1, style = "bold" }), icon = " " },
         { provider = provider.spacer(3), enabled = conditional.git_available },
-        { provider = { name = "file_type", opts = { filetype_icon = true, case = "lowercase" } }, enabled = conditional.has_filetype },
+        { provider = { name = "file_info", opts = { type = 'full-path'} } },
         { provider = provider.spacer(2), enabled = conditional.has_filetype },
         { provider = "git_diff_added", hl = hl.fg("GitSignsAdd", { fg = C.green }), icon = "  " },
         { provider = "git_diff_changed", hl = hl.fg("GitSignsChange", { fg = C.orange_1 }), icon = " 柳" },
@@ -27,6 +27,7 @@ feline.setup(astronvim.user_plugin_opts("plugins.feline", {
         { provider = "diagnostic_hints", hl = hl.fg("DiagnosticHint", { fg = C.yellow_1 }), icon = "  " },
       },
       {
+        { provider = { name = "file_type", opts = { filetype_icon = true, case = "lowercase" } }, enabled = conditional.has_filetype },
         { provider = provider.lsp_progress, enabled = conditional.bar_width() },
         { provider = provider.lsp_client_names(true), short_provider = provider.lsp_client_names(), enabled = conditional.bar_width(), icon = "   " },
         { provider = provider.spacer(2), enabled = conditional.bar_width() },
