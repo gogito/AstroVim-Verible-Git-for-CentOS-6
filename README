@@ -15,7 +15,7 @@ https://git-scm.com/
 
 Changes:
 - Add Verible format command to Keymap
-<SPC> v f
+SPC + v + f
 - Add fullpath file name to bufferline via Feline
 - Turn off relative number by default
 
